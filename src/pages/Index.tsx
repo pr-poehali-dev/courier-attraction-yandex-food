@@ -99,7 +99,11 @@ export default function Index() {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 via-secondary/20 to-primary/20 rounded-[3rem] p-8 animate-float">
                 <div className="w-full h-full bg-card rounded-[2rem] shadow-2xl flex items-center justify-center overflow-hidden">
-                  <Icon name="Package" className="text-primary opacity-20" size={200} />
+                  <img 
+                    src="https://cdn.poehali.dev/projects/35664f62-058c-4327-a458-46135950c5db/files/f3df6ee4-1773-4cef-a63b-33d9dd96fa7c.jpg" 
+                    alt="Курьер на самокате" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-secondary rounded-3xl shadow-xl flex items-center justify-center animate-scale-in">
@@ -114,6 +118,22 @@ export default function Index() {
         </section>
 
         <section className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="relative h-[400px] rounded-[3rem] overflow-hidden shadow-2xl animate-fade-in">
+              <img 
+                src="https://cdn.poehali.dev/projects/35664f62-058c-4327-a458-46135950c5db/files/1b65d71d-94ed-4d87-a16b-fbaae24c83b9.jpg" 
+                alt="Счастливый курьер" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="relative h-[400px] rounded-[3rem] overflow-hidden shadow-2xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <img 
+                src="https://cdn.poehali.dev/projects/35664f62-058c-4327-a458-46135950c5db/files/14654de9-7d3e-4f80-b340-0ed7f67afb5e.jpg" 
+                alt="Команда курьеров" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-black mb-4">Почему выбирают нас</h2>
             <p className="text-xl text-muted-foreground">Тысячи курьеров уже зарабатывают с Яндекс Едой</p>
