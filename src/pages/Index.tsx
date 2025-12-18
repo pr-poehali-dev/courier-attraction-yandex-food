@@ -67,7 +67,17 @@ export default function Index() {
                     <Icon name="ArrowRight" className="ml-2" size={20} />
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 py-6">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="text-lg px-8 py-6"
+                  onClick={() => {
+                    document.getElementById('benefits')?.scrollIntoView({ 
+                      behavior: 'smooth',
+                      block: 'start'
+                    });
+                  }}
+                >
                   <Icon name="Play" className="mr-2" size={20} />
                   Как это работает
                 </Button>
@@ -94,7 +104,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="mb-20">
+        <section id="benefits" className="mb-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="relative h-[400px] rounded-[3rem] overflow-hidden shadow-2xl animate-fade-in">
               <img 
