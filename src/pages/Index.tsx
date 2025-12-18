@@ -147,7 +147,7 @@ export default function Index() {
               <CardContent className="space-y-8">
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
-                    <Label className="text-lg font-semibold">Сколько часов в день готов работать?</Label>
+                    <span className="text-lg font-semibold">Сколько часов в день готов работать?</span>
                     <Badge variant="secondary" className="text-xl px-4 py-2">{hoursPerDay[0]} часов</Badge>
                   </div>
                   <Slider
