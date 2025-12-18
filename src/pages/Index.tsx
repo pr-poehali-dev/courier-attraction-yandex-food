@@ -86,9 +86,15 @@ export default function Index() {
                 Доставляй заказы на самокате, велосипеде или автомобиле. Выбирай удобный график и получай стабильный доход каждую неделю.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all">
-                  Оставить заявку
-                  <Icon name="ArrowRight" className="ml-2" size={20} />
+                <Button 
+                  size="lg" 
+                  className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all"
+                  asChild
+                >
+                  <a href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=97ea05f4a54f41f59d3b2aafca5efea2&utm_content=blank" target="_blank" rel="noopener noreferrer">
+                    Оставить заявку
+                    <Icon name="ArrowRight" className="ml-2" size={20} />
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8 py-6">
                   <Icon name="Play" className="mr-2" size={20} />
